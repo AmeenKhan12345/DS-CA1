@@ -2,6 +2,8 @@
 
 This repository contains a comprehensive exploratory data analysis (EDA), report, and interactive dashboard for India’s crop insurance schemes, focusing on Pradhan Mantri Fasal Bima Yojana (PMFBY) and Weather Based Crop Insurance Scheme (WBCIS) from 2018 to 2022.
 
+### View Live Dashboard- [Live-Dashboard](https://ameenkhan12345.github.io/DS-CA1/)
+
 ## 📂 Repository Structure
 
 ```
