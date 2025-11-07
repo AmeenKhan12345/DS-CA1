@@ -387,8 +387,7 @@ with tab2:
     
     st.markdown("---")
 
-    # 1. Define the remote URL to try
-    GEOJSON_PATH = "Indian_States.txt"
+    
     # --- Choropleth: robust loading & auto-detection ---
     st.subheader("2. India Choropleth Map (State-Level View)")
 
