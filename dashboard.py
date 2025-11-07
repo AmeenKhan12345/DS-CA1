@@ -5,6 +5,7 @@ import xgboost as xgb
 import plotly.express as px
 import plotly.graph_objects as go
 import joblib
+import os
 from sklearn.preprocessing import StandardScaler
 import json
 import requests
@@ -22,11 +23,22 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- 2. Constants & File Paths ---
-CLUSTERED_DATA_PATH = r'C:\Users\ASUS\Downloads\CA-1 DS\snapshots\processed_features_20251008_130631_clustered.csv'
-XGB_MODEL_PATH = 'xgb_premium_predictor.json'
-SCALER_PATH = r'C:\Users\ASUS\Downloads\CA-1 DS\snapshots\scaler_20251008_130631.pkl' # From your Phase 2 script
-FEATURE_IMPORTANCE_PATH = 'image_16da80.png'
+# --- 1. Constants (Deployment-Ready Relative Paths) ---
+# Define folder names as they appear in your GitHub repo
+DATA_FOLDER = "Data&Reports"
+MODELS_FOLDER = "Models&Scalers"
+VISUALS_FOLDER = "Visuals"
+
+# --- Use os.path.join to build cross-platform paths ---
+CLUSTERED_DATA_PATH = os.path.join(DATA_FOLDER, "processed_features_20251008_130631_clustered.csv")
+GEOJSON_PATH = os.path.join(DATA_FOLDER, "Indian_States.txt")
+
+XGB_MODEL_PATH = os.path.join(MODELS_FOLDER, "xgb_premium_predictor.json")
+SCALER_PATH = os.path.join(MODELS_FOLDER, "scaler_20251008_130631.pkl")
+ANN_MODEL_PATH = os.path.join(MODELS_FOLDER, "ann_premium_predictor.h5")
+
+FEATURE_IMPORTANCE_PATH = os.path.join(VISUALS_FOLDER, "image_16da80.png")
+
 
 # --- 3. Cluster Information (from our analysis) ---
 CLUSTER_NAMES = {
