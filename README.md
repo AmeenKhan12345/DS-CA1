@@ -9,7 +9,7 @@ This repository contains the **complete workflow**, from **data cleaning** and *
 
 A live, interactive version of the final dashboard is deployed on **Streamlit Community Cloud**:
 
-👉 [**Launch Live Dashboard**](#)  
+👉 [**Launch Live Dashboard**](https://ds-ca1-batgrcf45nbplqykjiwouv.streamlit.app)  
 
 ---
 
