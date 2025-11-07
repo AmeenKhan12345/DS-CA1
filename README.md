@@ -11,6 +11,8 @@ A live, interactive version of the final dashboard is deployed on **Streamlit Co
 
 👉 [**Launch Live Dashboard**](https://ds-ca1-batgrcf45nbplqykjiwouv.streamlit.app)  
 
+A full EDA Dashboard is also Live at 👉 [Launch](https://animated-palmier-e1e788.netlify.app)
+
 ---
 
 ## 💡 Key Features & Findings
