@@ -209,7 +209,7 @@ def get_all_model_metrics():
             X_test_scaled[numeric_features] = scaler_main.transform(X_test[numeric_features])
             X_test_scaled[other_numeric] = scaler_other.transform(X_test[other_numeric])
 
-            ann_model = tf.keras.models.load_model('ann_premium_predictor.h5')
+            ann_model = tf.keras.models.load_model(ANN_MODEL_PATH)
             y_pred_ann = ann_model.predict(X_test_scaled).flatten()
             r2_ann = r2_score(y_test, y_pred_ann)
         
