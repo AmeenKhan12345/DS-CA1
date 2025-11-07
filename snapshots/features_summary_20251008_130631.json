@@ -1,0 +1,36 @@
+{
+  "timestamp": "20251008_130631",
+  "n_rows": 5623,
+  "features": [
+    "log_sum_insured",
+    "log_area_insured",
+    "log_total_policies",
+    "female",
+    "marginal",
+    "small",
+    "scheme_encoded",
+    "season_encoded",
+    "state_is_Uttar_Pradesh",
+    "state_is_Madhya_Pradesh",
+    "state_is_Maharashtra",
+    "state_is_Chhattisgarh",
+    "state_is_Rajasthan",
+    "state_is_Tamil_Nadu",
+    "state_is_Odisha",
+    "state_is_Assam",
+    "state_is_Uttarakhand",
+    "state_is_Telangana",
+    "state_is_Other",
+    "scheme_x_log_sum_insured",
+    "season_x_log_sum_insured"
+  ],
+  "scaled_features": [
+    "log_sum_insured_std",
+    "log_area_insured_std",
+    "log_total_policies_std"
+  ],
+  "target": "log_gross_premium",
+  "keep_zero_uptake": true,
+  "top_n_states": 10,
+  "use_state_pc1": false
+}

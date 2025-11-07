@@ -1,0 +1,60 @@
+Simple OLS summary (train):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      log_gross_premium   R-squared:                       0.915
+Model:                            OLS   Adj. R-squared:                  0.915
+Method:                 Least Squares   F-statistic:                 4.897e+04
+Date:                Wed, 20 Aug 2025   Prob (F-statistic):               0.00
+Time:                        14:10:13   Log-Likelihood:                -5543.5
+No. Observations:                4554   AIC:                         1.109e+04
+Df Residuals:                    4552   BIC:                         1.110e+04
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+===================================================================================
+                      coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+const              -1.4674      0.033    -45.017      0.000      -1.531      -1.404
+log_sum_insured     0.8979      0.004    221.297      0.000       0.890       0.906
+==============================================================================
+Omnibus:                       88.122   Durbin-Watson:                   1.983
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               61.367
+Skew:                          -0.172   Prob(JB):                     4.72e-14
+Kurtosis:                       2.548   Cond. No.                         21.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+OLS HC3 robust summary:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      log_gross_premium   R-squared:                       0.915
+Model:                            OLS   Adj. R-squared:                  0.915
+Method:                 Least Squares   F-statistic:                 4.140e+04
+Date:                Wed, 20 Aug 2025   Prob (F-statistic):               0.00
+Time:                        14:10:13   Log-Likelihood:                -5543.5
+No. Observations:                4554   AIC:                         1.109e+04
+Df Residuals:                    4552   BIC:                         1.110e+04
+Df Model:                           1                                         
+Covariance Type:                  HC3                                         
+===================================================================================
+                      coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+const              -1.4674      0.036    -40.482      0.000      -1.538      -1.396
+log_sum_insured     0.8979      0.004    203.475      0.000       0.889       0.907
+==============================================================================
+Omnibus:                       88.122   Durbin-Watson:                   1.983
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               61.367
+Skew:                          -0.172   Prob(JB):                     4.72e-14
+Kurtosis:                       2.548   Cond. No.                         21.9
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+
+Test metrics (log & INR):
+R2_log_test: 0.9157890118385194
+RMSE_log_test: 0.8240008323954249
+MAE_log_test: 0.6860322256053515
+RMSE_INR_test: 4961.986814753656
+MAE_INR_test: 1515.8260815525182
